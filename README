@@ -1,0 +1,12 @@
+BFS ODL collect
+(c) 2011 by Christiane Ruetten, cr at 23bit dot net
+
+Collection of scripts for automatically collecting, analyzing and plotting
+of gamma background radiation sensor data provided by the German Bundeamt
+für Strahlensicherheit (BFS), http://odlinfo.bfs.de/
+
+collect.sh - collects data, analyzes, and generates plot
+sensors.py - parses BFS sensor data websites
+stats.py   - generates statistical analysis
+plot.gp    - makes a pretty plot with GnuPlot
+
