@@ -9,4 +9,5 @@ collect.sh - collects data, analyzes, and generates plot
 sensors.py - parses BFS sensor data websites
 stats.py   - generates statistical analysis
 plot.gp    - makes a pretty plot with GnuPlot
+scraper/   - helper scripts for retrieving and scraping the diagrams
 
