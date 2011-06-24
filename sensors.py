@@ -63,12 +63,17 @@ data = []
 for url in pages:
   p = HTMLTables()
   p.feed( urllib.urlopen( url ).read() )
-  table = p.tables[3]
+  table = p.tables[4]
   p.close()
 
   for row in table:
     if row[-1] == 'betriebsbereit':
-      data.append( ( row[1][1:-1], float( row[-2] ) ) )
+      try:
+        value = float( row[-2] )
+      except ValueError:
+        pass
+      else:
+        data.append( ( row[1][1:-1], value ) )
 
 for ( id, value ) in data:
   print id, value
